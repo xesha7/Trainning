@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형 선택 팝업</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <div class="buttonContainer">
+      <button id="circleButton">원 그리기</button>
+      <button id="rectangleButton">사각형 그리기</button>
+    </div>
+    <script src="/src/canvas.js"></script>
+    <style>
+      canvas {
+        border : 5px solid orange;
+      }
+      #buttonContainer {
+        position: absolute;
+        top: 10px; /* 원하는 수직 위치 조정 */
+        left: 10px; /* 원하는 수평 위치 조정 */
+        z-index: 1;
+      }
+
+      button {
+        margin-right: 10px; /* 버튼 사이의 간격 조정 (원하는 값으로 변경) */
+      }
+    </style>
+</body>
+</html>
